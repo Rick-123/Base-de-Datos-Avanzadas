@@ -1,0 +1,79 @@
+{% extends "layout_logeado.html" %} 
+{% block content %}
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">               
+    <title>Panel de Administrador</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/adminpanel.css') }}">
+        
+</head>
+
+<body>
+        <h1>Pedidos Activos</h1>
+        <!--<div class="encabezado">
+            <h2>Titulo</h2>
+        </div>-->
+        <div class="central">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li><br>
+                    <li><a href="finalizados.html">Pedidos Finalizados</a></li><br>
+                    <li><a href="cancelados.html">Pedidos Cancelados</a></li><br>
+                    <li><a href="clientes.html">Clientes</a></li><br>
+                    <li><a href="empleados.html">Empleados</a></li><br>                   
+                </ul>
+            </div>
+            <div class="articulo">
+                <table border="1">
+                	<tr>
+                		<th>Orden</th>
+                		<th>Cliente</th>
+                		<th>Telefono</th>
+                		<th>Platillo</th>
+                		<th>Cantidad</th>
+                		<th>Comentarios</th>                		
+                	</tr>
+                	<tr>               
+                <td> 0001 </td>
+                <td> Gloria  </td>
+                <td> 3350898475 </td>
+                <td> Tacos </td>
+                <td> 6 </td>
+                <td>surtidos, sin cebolla y dorados</td>
+           	        </tr>
+           	        <tr>               
+                <td> 0002 </td>
+                <td> Ricardo  </td>
+                <td> 3384976584 </td>
+                <td> Lonche de pierna </td>
+                <td> 1 </td>
+                <td>sin cebolla porfavor</td>
+           	        </tr>
+           	        <tr>               
+                <td> 0003 </td>
+                <td> Gustavo  </td>
+                <td> 3322345879 </td>
+                <td> Hamburguesa </td>
+                <td> 1 </td>
+                <td>con papas y doble carne</td>
+           	        </tr>
+           	        <tr>               
+                <td> 0004 </td>
+                <td> Miguel  </td>
+                <td> 3320863855 </td>
+                <td> Lonche de birria </td>
+                <td> 1 </td>
+                <td>con todo</td>
+           	        </tr>
+                </table>               
+            </div>
+        </div>
+        <!--<div class="pie">
+            <p>Pie de Pagina</p>
+        </div>-->
+    </body>
+</html>
+{% endblock %} 

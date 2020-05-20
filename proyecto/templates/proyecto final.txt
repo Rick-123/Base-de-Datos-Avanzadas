@@ -1,0 +1,19 @@
+utilizar microservicios
+no hacerlo en localhost (si se hace calificacion maxima 80)
+lenguaje de programacion:
+	+ Python 
+	+ NodeJS
+	+ Flask
+puntos extra a quien utilize tecnologia de contenedores:
+	+ Dockers
+	+ Kubernetel
+obligatorio NoSQL
+
+ACTIVIDAD:
+	+ Nombre de equipo
+	+ Nombre de proyecto
+	+ Buscar una problematica
+	+ Solucion// Propuesta
+	+ Encuesta a 12 personas
+	+ Realizar diapositivas
+

@@ -1,0 +1,58 @@
+{% extends "layout_logeado.html" %} 
+{% block content %}
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">               
+    <title>Finalizados</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/finalizados.css') }}">
+        
+</head>
+    <body>
+        <h1>Pedidos Finalizados</h1>
+        <!--<div class="encabezado">
+            <h2>Titulo</h2>
+        </div>-->
+        <div class="central">
+            <div class="menu">
+                <ul>
+                    <li><a href="adminpanel.html">Regresar</a></li><br>                                    
+                </ul>
+            </div>
+            <div class="articulo">
+                <table border="1">
+                	<tr>
+                		<th>Orden</th>
+                		<th>Cliente</th>
+                		<th>Telefono</th>
+                		<th>Platillo</th>
+                		<th>Cantidad</th>
+                		<th>Comentarios</th>                		
+                	</tr>
+                	<tr>               
+                <td> 0005 </td>
+                <td> Pablo  </td>
+                <td> 3350898475 </td>
+                <td> Lonche </td>
+                <td> 1 </td>
+                <td>con todo porfavor</td>
+           	        </tr>
+           	        <tr>               
+                <td> 0006 </td>
+                <td> Aldo  </td>
+                <td> 3384976584 </td>
+                <td> Tacos </td>
+                <td> 3 </td>
+                <td>1 de chorizo y 2 de biste</td>
+           	        </tr>          	        
+                </table>               
+            </div>
+        </div>
+        <!--<div class="pie">
+            <p>Pie de Pagina</p>
+        </div>-->
+    </body>
+</html>
+{% endblock %} 

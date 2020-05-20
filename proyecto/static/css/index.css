@@ -1,0 +1,38 @@
+.center-h {
+    justify-content: center;
+  }
+.left{
+    float: left;
+    
+}
+.right{
+    float: right;
+   
+}
+.center{
+
+   display:inline-block
+}
+.conteiner{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.2);
+}
+.container .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}

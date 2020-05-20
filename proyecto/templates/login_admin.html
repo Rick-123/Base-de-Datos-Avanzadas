@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% extends "layout.html" %} 
+{% block content %}
+
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale>
+	  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Administrador </title>
+   <!-- <link rel="stylesheet" href="css/estilos2.css"> -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/registro2.css') }}">
+
+</head>
+
+<body>
+    
+    <form action="http://localhost:5000/login_admin" method="get">
+    <section class="form-register">
+      <h4 aling="center">BIENVENIDO </h4>
+      <label for="username">Usuario</label><br>
+      <input class="controls" type="text" name="username" id="username" placeholder="INGRESE SU NOMBRE" /><br>        
+      <label for="password">Contraseña</label><br>
+      <input class="controls" type="password" name="password" id="password" placeholder="INGRESE SU CONTRASEÑA"/> <br>
+      <a class="btn btn-primary btn-lg"  href="{{ url_for('adminpanel') }}" role="button">Iniciar Sesion</a><br></br>
+      <!-- <input class="botons" type="submit" id="send-signup2" name="signup2" value="Iniciar sesion"><br> -->
+      <a href="{{ url_for('login') }}">Regresar</a><br><br> 
+      <!-- <a href="registro.html">Crear cuenta</a><br><br> -->
+    </form>
+    </section>
+
+</body>
+</html>
+
+{% endblock %} 

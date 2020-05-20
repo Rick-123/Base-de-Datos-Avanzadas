@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+
+{% block content%}
+<html>
+<head>
+	
+	<meta name="viewport" content="width=device-width", initial-scale>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/registro.css') }}">
+	<title>Registro</title>
+</head>
+<body>
+	
+	<form action="http://localhost:5000/registro" method="post">
+	<section class="form-register">
+		<h4>Registro de Usuario</h4>
+		<input class="controls" type="text" name="username" id="username" placeholder="Ingrese su nombre" /><br> 
+		<input class="controls" type="text" name="apellido" id="qpellido" placeholder="Ingrese su apellido"/><br>
+		<input class="controls" type="text" name="telefono" id="telefono" placeholder="Ingrese su telefono"/><br>
+		<input class="controls" type="password" name="password" id="password" placeholder="Ingrese su contraseña"/> <br>
+		<input class="botons" type="submit" id="send-signup" name="signup" value="Registrar"/> 
+		 <a href="{{ url_for('index') }}">Regresar</a><br><br>
+		</form>
+	</section>
+
+</body>
+</html>
+{% endblock %}

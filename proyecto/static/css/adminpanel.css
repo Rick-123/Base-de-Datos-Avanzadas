@@ -1,0 +1,43 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Helvetica;
+}
+.encabezado{
+    background-color: #555;
+    padding: 30px;
+    text-align: center;
+    font-size: 36px;
+    color: white;
+}
+.menu{
+    float:left;
+    width: 20%;
+    height: 300px;
+    background-color: #aaa;
+    padding: 20px;
+}
+.menu ul{
+    list-style-type: none;
+    padding: 0;
+}
+.articulo{
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #eee;
+    height: 300px;
+}
+.central:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.pie{
+    background-color: #555;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}

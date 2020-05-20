@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block content%}
+<html>
+<head>
+	
+	<meta name="viewport" content="width=device-width", initial-scale>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+
+<body>
+
+<div class="jumbotron">
+  <h1 class="display-4">Bienvenidos al Maya</h1>
+       <!-- <img src="{{ url_for('static', filename='images/fondo.jpg') }}" align="center" class="d-block w-100" alt="El maya"> -->
+  <hr class="my-4">
+  <p>En este trabajo se presentara un sitio web, el cual es para apoyar a los
+estudiantes, ya que usualmente se llegan a presentar distintos inconvenientes a la
+hora de realizar la compra del desayuno o la comida.
+Nuestro sitio web es para darles mejor tiempo a los alumnos a que puedan comer
+de una forma tranquila y sin presiones para que al momento de querer entrar a su
+próxima clase, se encuentre con mayor energía.</p>
+  <a class="btn btn-primary btn-lg" href="{{ url_for('index') }}" role="button">Regresar</a>
+</div>
+
+</body>
+</html>
+{% endblock %}

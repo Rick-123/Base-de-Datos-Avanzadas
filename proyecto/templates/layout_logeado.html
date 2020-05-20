@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>El maya</title>
+	<!-- CUSTOM CSS-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+	integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main2.css') }}">
+	<!-- <script type="text/javascript" src="js/modernizr.custom.46884.js"></script> -->
+	
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<a class="navbar-brand" href="{{ url_for('index') }}">EL MAYA</a>
+	<button class="navbar-toggler" type="button"
+		data-toggler="collapse" data-target="#navbarNav"
+		aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle
+		navigation">
+		<sapan class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarNav">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="#">Bienvenido <span class="sr-only">
+				(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{{ url_for('index') }}">Cerrar sesion</a>
+			</li>
+		</ul>
+	</div>
+
+</nav>
+
+    
+    <div class="conteiner p-4">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+		
+</body>
+
+</html>

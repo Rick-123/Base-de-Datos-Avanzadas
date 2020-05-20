@@ -1,0 +1,52 @@
+{% extends "layout_logeado.html" %} 
+{% block content %}
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">               
+    <title>Clientes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/clientes.css') }}">
+        
+</head>
+    <body>
+        <font color="red">
+        <h1>Lista de Clientes</h1>
+    </font>
+        <!--<div class="encabezado">
+            <h2>Titulo</h2>
+        </div>-->
+        <div class="central">
+            <div class="menu">
+                <ul>
+                    <li><a href="adminpanel.html">Regresar</a></li><br>                                    
+                </ul>
+            </div>
+            <div class="articulo">
+                <table border="1">
+                	<tr>
+                		<th>ID Usuario</th>
+                		<th>Nombre</th>
+                		<th>Apellido</th>
+                        <th>Telefono</th>
+                        <th>Opciones</th>                		
+                	</tr>
+                	<tr>               
+                <td> 1234 </td>
+                <td> Grace  </td>
+                <td> Gonzalez </td>
+                <td> 3350898475 </td>
+                <td><button class="button button1">Editar</button>
+                    <button class="button button2">Eliminar</button>
+                </td>               
+           	        </tr>          	                 	        
+                </table>               
+            </div>
+        </div>
+        <!--<div class="pie">
+            <p>Pie de Pagina</p>
+        </div>-->
+    </body>
+</html>
+{% endblock %} 
